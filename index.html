@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фен и Стайлер 2 в 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- ===== Боковое колесо (только Desktop) ===== -->
+    <aside class="side-wheel" aria-label="Навигация по слайдам">
+      <div class="wheel-line">
+        <img class="wheel-arc" alt="" aria-hidden="true">
+      </div>
+      <button class="wheel-icon active" data-slide="0" aria-label="Слайд 1">
+        <img class="wheel-icon__image" alt="" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2a4 4 0 0 1 4 4v6a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 16v6M8 22h8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="wheel-label" aria-hidden="true">Фен и стайлер 2 в 1</span>
+      </button>
+      <button class="wheel-icon" data-slide="1" aria-label="Слайд 2">
+        <img class="wheel-icon__image" alt="" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wheel-label" aria-hidden="true">Суперлёгкий</span>
+      </button>
+      <button class="wheel-icon" data-slide="2" aria-label="Слайд 3">
+        <img class="wheel-icon__image" alt="" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="wheel-label" aria-hidden="true">Инновационный мотор</span>
+      </button>
+    </aside>
+
+    <!-- ===== Основной слайдер ===== -->
+    <div class="swiper main-slider">
+      <div class="swiper-wrapper">
+
+        <!-- ================= СЛАЙД 1 ================= -->
+        <section class="swiper-slide slide slide--1">
+          <div class="slide__bg"></div>
+
+          <div class="slide__inner">
+            <header class="slide1__header">
+              <h1 class="slide1__title">
+                Фен и Стайлер<br>в уникальном дизайне
+              </h1>
+              <span class="pill pill--light">2 в 1</span>
+            </header>
+
+            <div class="slide1__stage">
+              <figure class="slide1__photo slide1__photo--left">
+                <span class="pill pill--dark">Фен</span>
+                <div class="slide1__img slide1__img--1"></div>
+              </figure>
+
+              <div class="slide1__center">
+                <div class="slide1__img slide1__img--hair"></div>
+              </div>
+
+              <figure class="slide1__photo slide1__photo--right">
+                <div class="slide1__img slide1__img--2"></div>
+                <span class="pill pill--light slide1__tag">Стайлер</span>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= СЛАЙД 2 ================= -->
+        <section class="swiper-slide slide slide--2">
+          <div class="slide__bg"></div>
+
+          <div class="slide__inner slide2__inner">
+            <div class="slide2__feature">
+              <span class="slide-feature__icon slide-feature__icon--pero" aria-hidden="true"></span>
+              <span>ЛЁГКОСТЬ И КОМФОРТ<br>В РУКЕ</span>
+            </div>
+            <div class="slide2__left">
+              <span class="badge-star">Не тяжелее<br>чашки кофе</span>
+              <div class="slide2__img"></div>
+            </div>
+
+            <div class="slide2__right">
+              <h2 class="slide2__title">СУПЕР-<br>ЛЁГКИЙ</h2>
+              <p class="slide2__text">
+                Уменьшает усталость рук при сушке волос, делая процедуру удобной
+                и приятной даже после напряжённого рабочего дня.
+              </p>
+              <div class="slide2__weight-wrap">
+                <span class="pill pill--light slide2__weight">500 г</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= СЛАЙД 3 ================= -->
+        <section class="swiper-slide slide slide--3">
+          <div class="slide__bg"></div>
+
+          <div class="slide__inner slide3__inner">
+            <div class="slide3__feature">
+              <span class="slide-feature__icon slide-feature__icon--motor" aria-hidden="true"></span>
+              <span>ИННОВАЦИОННЫЙ МОТОР</span>
+            </div>
+            <header class="slide3__header">
+              <h2 class="slide3__title">
+                ДЛЯ ЦЕНИТЕЛЕЙ КОМФОРТА<br>И КАЧЕСТВА<span class="mobile-title-break"><br></span> В УХОДЕ ЗА ВОЛОСАМИ
+              </h2>
+              <p class="slide3__subtitle">
+                Бесщёточный мотор BLDC
+              </p>
+            </header>
+            <div class="slide3__art">
+              <img class="slide3__motor-image" alt="" aria-hidden="true">
+              <p class="slide3__mobile-caption">Бесщёточный мотор BLDC</p>
+            </div>
+            <span class="badge-star slide3__badge">Салонная<br>мощность</span>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
